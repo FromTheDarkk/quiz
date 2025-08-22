@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: 'Irish Grover', sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-color: rgb(43, 0, 87);
+    color:beige;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main{
+    display: none;
+}
+
+.question{
+    font-size: 100px;
+
+}
+
+.ans-row{
+    display:flex;
+}
+
+.ans{
+    background-color: #694fa6 ;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px;
+    width: 65px;
+    height: 65px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    transition: transform 0.5s ease;
+}
+
+
+.ans:hover{
+    border-radius: 20px;
+    transform: scale(1.7);
+    transition: transform 0.5s ease;
+}
+
+.start-btn{
+    font-family: Work Sans;
+    font-size: 65px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    padding: 15px;
+    background: #694fa6;
+    transition: transform 0.5s ease;
+}
+
+.start-btn:hover{
+    transform: scale(1.7);
+    transition: transform 0.5s ease;
+    background-color: #694fa6;
+    color: #7397e6;
+    border: 3px solid #887dd1;
+    border-radius: 20px
+
+}
+
+.container.start{
+  display: grid;
+  grid-template-rows: 1fr -1px 1fr;
+  width: 100%;
+}
+
+
+
+.fon{
+  display:inline-block;
+  color:#fff;
+  font-weight:800;
+  font-size:36px;
+}
+
+
+.fon1{transform: rotate(-15deg);}
+.fon2{transform: rotate(-20deg);}
+.fon3{transform: rotate(36deg);}
+.fon4{transform: rotate(12deg);}
+.fon5{transform: rotate(22deg);}
+.fon6{transform: rotate(-45deg);}
+
+
+.row.top .fon1{transform: rotate(-15deg) translate(-140px, -6px);}
+.row.top .fon2{transform: rotate(-20deg) translate(0, -18px);}
+.row.top .fon3{transform: rotate(36deg)  translate(140px, -10px);}
+
+.row.bottom .fon4{transform: rotate(12deg)  translate(-160px, 8px);}
+.row.bottom .fon5{transform: rotate(22deg)  translate(0, 18px);}
+.row.bottom .fon6{transform: rotate(-45deg) translate(160px, 10px);}
+
+
+
+.center-bar {
+  width: 1000px;
+  border-top: 2px solid #34f1e0;
+  border-bottom: 2px solid #34f1e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
